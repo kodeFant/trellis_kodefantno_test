@@ -5,11 +5,11 @@
 wordpress_sites:
   kodefant.no:
     site_hosts:
-      - canonical: kodefant.no
+      - canonical: 178.62.221.217
         redirects:
           - www.kodefant.no
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
+    repo: git@github.com:kodeFant/trellis_kodefantno_test.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
@@ -17,26 +17,5 @@ wordpress_sites:
     ssl:
       enabled: false
       provider: letsencrypt
-    cache:
-      enabled: false
-
-
-# Documentation: https://roots.io/trellis/docs/local-development-setup/
-# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
-# Define accompanying passwords/secrets in group_vars/development/vault.yml
-
-wordpress_sites:
-  kodefant.no:
-    site_hosts:
-      - canonical: kodefantno.test
-        redirects:
-          - www.kodefantno.test
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: lars.lillo@gmail.com
-    multisite:
-      enabled: false
-    ssl:
-      enabled: false
-      provider: self-signed
     cache:
       enabled: false

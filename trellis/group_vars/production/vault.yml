@@ -10,15 +10,15 @@ vault_users:
 # Variables to accompany `group_vars/production/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  example.com:
+  kodefant.no:
     env:
       db_password: example_dbpassword
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+auth_key: "rY{DmTlAa2>zy2-nSAa0I.I%m6OKux5=g_<z)M0t2GtURQ?5.f#*+E#F(^AbH!Qt"
+secure_auth_key: "JR$$><U^J{rwNz5T,fEN%j$xO}CWBFX>*z46>)lw3&,NFzK)T8+9hJ^{8RALI2Ry"
+logged_in_key: "P;C:LP%w&S}C,:,ONJ#6HN1en;amXWq5[Xoh:&RKKih]cKN9x$G4Ez9llEg)>b/p"
+nonce_key: "^[rTRJn<`}&n,pTWazJiiC#LLD%Bi^{JJK#ig9gYb{v%3Kdi7IP*3{]u)L8^8+v)"
+auth_salt: "u)I2,jn:DC?r$=rb`sVy:%F7T(]XyG^oxh_F)^YieZEPUE_9z`u,X6Y>@d#r0F{r"
+secure_auth_salt: "=bUZf>wJw2B[e!Y6qWDZ-0gh.&Eon/-Q3e,u;A|?uw)SH@YdT%^CXgN9#Lg:uZyN"
+logged_in_salt: "{fDa7panX.ss[<mu1jBe7BESGxXDn>14Wkt}8@pf;kCbR1$]m&G^/BB+7[a`^HYh"
+nonce_salt: ",hu:|QYpXf>/!$E)TddMmN;WM]K7rX@8P,zRx*ekFlv69W]=0C%@d_:7)0v4G*:|"
