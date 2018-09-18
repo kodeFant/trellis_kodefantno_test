@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-178.62.221.217
+kodefant.no
 
 [web]
-178.62.221.217
+kodefant.no
