@@ -8,7 +8,9 @@ wordpress_sites:
       - canonical: kodefant.no
         redirects:
           - www.kodefant.no
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+          - driftercode.com
+          - www.driftercode.com
+    local_path: ../kodefantno # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:kodeFant/trellis_kodefantno_test.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
     branch: master
@@ -22,3 +24,5 @@ wordpress_sites:
       duration: 30s
       skip_cache_uri: /wp-admin/|/xmlrpc.php|wp-.*.php|/feed/|index.php|sitemap(_index)?.xml
       skip_cache_cookie: comment_author|wordpress_[a-f0-9]+|wp-postpass|wordpress_no_cache|wordpress_logged_in
+    env:
+      disable_wp_cron: false
